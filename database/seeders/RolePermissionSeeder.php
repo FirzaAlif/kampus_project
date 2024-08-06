@@ -37,7 +37,7 @@ class RolePermissionSeeder extends Seeder
         Role::create(['name'=>'superadmin']);
         Role::create(['name'=>'dosenkaryawan']);
         Role::create(['name'=>'mahasiswa']);
-
+// a
         $rolesuperadmin = role::findByName('superadmin');
         $rolesuperadmin->givePermissionTo('tambah-user');
         $rolesuperadmin->givePermissionTo('tambah-tugas');
